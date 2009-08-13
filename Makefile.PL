@@ -1,4 +1,5 @@
 use ExtUtils::MakeMaker;
+requires 'Task::Weaken' => 0;
 WriteMakefile(
     'NAME'         => 'XML::Elemental',
     'VERSION_FROM' => 'lib/XML/Elemental.pm',
