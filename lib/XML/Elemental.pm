@@ -11,7 +11,8 @@ sub parser {
     my $handler;
     if ($_[1] && ref($_[1]) ne 'HASH') {
         $handler = $_[1];
-    } else {
+    }
+    else {
         require XML::Elemental::SAXHandler;
         $handler = XML::Elemental::SAXHandler->new($_[1]);
     }
